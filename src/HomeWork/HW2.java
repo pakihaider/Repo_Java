@@ -51,7 +51,7 @@ public class HW2 {
 
       double fTemp = 100;
       double cTemp = ( fTemp - 32 ) * 5/9;
-        System.out.println(fTemp + "°F" -32  * );
+        System.out.println(fTemp + "°F" -32  *);
 
       // Convert deg-Fahrenheit into K
       // T(K) = (T(°F) + 459.67)× 5/9
