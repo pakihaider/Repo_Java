@@ -2,6 +2,8 @@ package HomeWork;
 
 import com.sun.org.glassfish.external.statistics.AverageRangeStatistic;
 
+import java.util.Locale;
+
 public class HW6 {
 
     public static void main(String[] args) {
@@ -14,6 +16,12 @@ public class HW6 {
          * For hint refer : Loop_Concept, Line #34
          */
 
+        String mySentence = "MY Favorite FruIT iS ManGoE";
+        String [] arrSentence = mySentence.split(" ");
+        String formatted = " ";
+        for (int i = 0; i < arrSentence.length; i++); { formatted += arrSentence[i].substring(0,1).toUpperCase() + arrSentence[i].substring(1). toLowerCase();
+
+
         /** 2
          * create the abbreviation // HNY
          */
@@ -25,6 +33,11 @@ public class HW6 {
         System.out.println("Abbreviation for '" + sentence_1 + "' is " +
                 "' " + abbr);
         // Abbreviation for 'very gOOD MorNING to You dear' is : VGMTYD
+
+        String abbr = "";
+        String arrSentence = " mY Favorite Fruit is MangOE";
+        for (int i=0; i < arrSentence.length(); i++){abbr += arrSentence[i].toUpperCase().charAt(0);
+            System.out.println(formatted + "Abbreviation: "+abbr);
 
 
         /** 3
@@ -50,6 +63,47 @@ public class HW6 {
          *
          */
 
+        int studentScore = 120;
+        int maxScore = 150;
+        char grade = 'a';
+        String scholarship = " ";
+
+        double percentage = studentScore * 100 / maxScore;
+        // We will need to print percentage and grade based on condition
+
+            if (studentScore > 0 && studentScore <= maxScore){
+                if (percentage >= 91) {
+                    grade = 'A';}
+                else if (percentage >= 81){
+                    grade = 'B';}
+                else if (percentage >= 71){
+                    grade = 'C';}
+                else if (percentage >= 61){
+                    grade = 'D';}
+                else if (percentage >= 51){
+                    grade = 'E';}
+                else { grade = 'F';}
+
+                else{
+                    System.out.println("Invalid Student Score entered: " + studentScore);
+                }
+                System.out.println("Your percentage is : " + percentage + "and your grade is : " + grade);
+
+                // Now scholarship assigning
+
+                if (grade == 'A'){ scholarship = "full";}
+                else if (grade == 'B' || grade == 'C') { scholarship = "half";}
+                else {scholarship = "No";}
+                System.out.println("Based on your grade " + grade + ", you get " + scholarship + " scholarship for next year"
+                        );
+
+                }
+                }
+                }
+            }
+
+
+
 
         /** 4
          * Create an array and store 5 int-value.
@@ -60,31 +114,90 @@ public class HW6 {
          * {10,20,30,40,50}
          * (10+20+30+40+50)/5
          */
-        int arr [] = {10, 20, 30, 40, 50};
-        int n = arr.length;
-        System.out.println(average(arr,n));
+        int [] numbers = {10, 20, 30, 40, 50};
+        int sum = 0;
+
+        if (numbers.length > 0) {
+        for(int i=0; i<numbers.length; i++) {
+            sum = sum + numbers[i];
+        }
+        sum = sum/numbers.length;
+        System.out.println("\nThe sum of values is " + sum);
+    } else {
+        System.out.println("\nThe number must not be divisible by " + numbers.length);
+    }
+
 
 
         /** 5
-         * int[] numbers = {11,22,33,44,55,98,65};
          * String[] names = {"john", "happy", "peace", "joy", "laugh"};
-         *
-         * Limitation : both array must be of same length
-         *
-         * if the numbers-array has 33 in it,
-         *   print the index at which 33 is present in number array
-         *   And, print the name present at same index in name array.
-         *
-         *
          */
 
+        String[] names = {"john", "happy", "peACe", "jOy", "laugh", "Marry"};
+        String nameToSearch = "zeshan";
+        boolean isFound = false;
 
+        for(int i=0; i<names.length; i++) {
+        if(names[i] == nameToSearch) {
+            isFound = true;
+            System.out.println(names[i] + " is at position " + (i+1) + " in the array");
+        }
+    }
 
+        if(!isFound) {
+        System.out.println("\n" + nameToSearch + " is not present in the array");
+    }
 
+      /** 6
+     * int[] numbers = {11,22,33,44,55,98,65};
+     * String[] names = {"john", "happy", "peace", "joy", "laugh"};
+     * int numberToSearch = 22;
+     * Limitation : both array must be of same length
+     *
+     */
+
+     int [] lengthNumbers = {11, 22, 33, 44, 55, 98, 65};
+     String [] lengthNames = {"john", "happy", "peace", "joy", "laugh"};
+     int numberToSearch = 22;
+     boolean isNumberFound = false;
+
+     if (lengthNames.length == lengthNumbers.length)
+
+    {
+        for (int i = 0; i < lengthNumbers.length; i++) {
+            if (lengthNumbers[i] == numberToSearch) {
+                isNumberFound = true;
+                System.out.println("\n" + numberToSearch + " is present at the index " + i + " in numbers array");
+                System.out.println("\n" + lengthNames[i] + " is present at the same index in names array");
+
+            }
+        }
+
+    } else {
+        System.out.println("\n The arrays are not of the same length");
+    }
+
+        if(isNumberFound != true) {
+        System.out.println("\n" + numberToSearch + " is not present in the array");
+    }
+}
+
+   /**
+    *
+    * String[] myNames = {"john", "happy", "peACe", "jOy", "LEarN", "Orange", "king kong", "iRON MAN"};
+    * print the names from array if the name-length is >=5 and name contains 'o' or 'O'
+    *
+    */
+
+   String[] myNames = {"john", "happy", "peACe", "jOy", "LEarN", "Orange", "king kong", "iRON MAN"};
+   String finalAnswer = " ";
+
+   for (int i=0; i<myNames.length; i++){
+       if( myNames[i].length()>=5 && myNames[i].toLowerCase().contains("o")
 
 
     }
 
 
 
-}
+            }
