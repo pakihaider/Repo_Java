@@ -51,13 +51,13 @@ public class HW2 {
 
       double fTemp = 100;
       double cTemp = ( fTemp - 32 ) * 5/9;
-        System.out.println(fTemp + "°F" -32  * (5 / 9);
+
 
       // Convert deg-Fahrenheit into K
       // T(K) = (T(°F) + 459.67)× 5/9
 
       double FTemp = 100;
-      double kTemp = ( FTemp + "°F" + 459.67 * (5 / 9);
+      double kTemp = ( FTemp + "°F" + 459.67) ;
         System.out.println();
 
       // Convert Kelvin to Deg- Celcius

@@ -15,7 +15,7 @@ public class HW3 {
          * Use: Ternary Operator
          */
 
-        result_1 = (sentence_1.length() > = 10) ? 100 : 15;
+        result_1 = (sentence_1.length() >= 10) ? 100 : 15;
         System.out.println("result_1 = " + result_1);
 
          // Question - 2
