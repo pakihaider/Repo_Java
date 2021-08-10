@@ -47,7 +47,7 @@ public class HW3 {
 
         System.out.println("Does Sentence_3 start with 'a' ? " + Sentence_3.toLowerCase(Locale.ROOT).startsWith("a"));
         System.out.println("Does Sentence_3 ends with 'k' ? " + Sentence_3.toUpperCase().endsWith("K"));
-        String result_3 = result_3.toLowerCase().startsWith("a") ? "Media" : "Entertainment";
+        String answerResult_3 = result_3.toLowerCase().startsWith("a") ? "Media" : "Entertainment";
 
         System.out.println("is it media or entertainment? " + result_3);
 

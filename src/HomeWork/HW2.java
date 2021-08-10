@@ -9,7 +9,7 @@ public class HW2 {
          * ft = cT+32
          */
 
-        double cTemp = 100;
+        double cTemp = 100.0;
         double fTemp = cTemp * 9/5 + 32;
         System.out.println(cTemp + "°C = " +fTemp + "°f");
 
@@ -32,16 +32,16 @@ public class HW2 {
          * convert deg-Cel into Fahrenheit
          * ft = cT+32
          */
-        double cTemp = 100;
-        double fTemp = cTemp * 9/5 + 32;
-        System.out.println(cTemp + "°C = " +fTemp + "°f");
+        double cTemp1 = 100;
+        double fTemp1 = cTemp1 * 9/5 + 32;
+        System.out.println(cTemp + "°C = " +fTemp1 + "°f");
         /**
          * convert deg-Cel into Kelvin
          * T(k) = T(C) + 273.15
          */
-        double cTemp = 100;
-        double tKelvin = cTemp + 273.15;
-        System.out.println(cTemp + "°C" + 273.15);
+        double cTemp2 = 100;
+        double tKelvin = cTemp2 + 273.15;
+        System.out.println(cTemp2 + "°C" + 273.15);
 
         /**
          * F -> C
@@ -49,15 +49,15 @@ public class HW2 {
          * F -> K
          */
 
-      double fTemp = 100;
-      double cTemp = ( fTemp - 32 ) * 5/9;
+      double fTemp2 = 100;
+      double cTemperature = ( fTemp2 - 32 ) * 5/9;
 
 
       // Convert deg-Fahrenheit into K
       // T(K) = (T(°F) + 459.67)× 5/9
 
       double FTemp = 100;
-      double kTemp = ( FTemp + "°F" + 459.67) ;
+      String kTemp =  (FTemp + "°F" + 459.67);
         System.out.println();
 
       // Convert Kelvin to Deg- Celcius

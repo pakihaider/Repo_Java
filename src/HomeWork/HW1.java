@@ -3,7 +3,7 @@ package HomeWork;
 public class HW1 {
     public static void main(String[] args) {
 
-        System.out.println(HW1);
+
         // 1. number of hours in a day (byte)
         byte hoursPerDay = 24;
 
